@@ -1,7 +1,6 @@
 package com.example.todoapplication.service;
 
 import com.example.todoapplication.Task;
-
 import java.util.List;
 
 public interface TaskService {
