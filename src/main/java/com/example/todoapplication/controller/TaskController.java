@@ -1,6 +1,6 @@
 package com.example.todoapplication.controller;
 
-import com.example.todoapplication.model.Task;
+import com.example.todoapplication.Task;
 import com.example.todoapplication.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -35,6 +35,6 @@ public class TaskController {
 
     @DeleteMapping("/{id}")
     public void deleteTask(@PathVariable Long id) {
-        taskService.deleteTask(id);
+        taskService.deleteTaskById(id);
     }
 }
